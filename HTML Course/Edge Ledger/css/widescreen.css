@@ -1,0 +1,22 @@
+
+/* Align Items to left */
+
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+
+/* Position Icon */
+#what .items .item i {
+    margin-right: 1.5rem;
+    align-self: center;
+    margin-bottom: 0;
+    
+}
+
+
+/* Contact/Map */
+
+#contact .map {
+    flex: 2 ;
+}
