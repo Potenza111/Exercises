@@ -81,7 +81,9 @@
 
     function bonk(e) {
       if (!e.isTrusted) return;
+
       score++
+
       this.classList.remove('up');
       scoreBoard.textContent = score;
 
