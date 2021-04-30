@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Layout from "@/components/Layout";
 import EventItem from "@/components/EventItem";
 
@@ -23,12 +22,3 @@ export async function getStaticProps() {
   // console.log(events);
   return { props: { events }, revalidate: 1 };
 }
-=======
-export default function EventsPage() {
-  return (
-    <div>
-      <h1>My Events</h1>
-    </div>
-  );
-}
->>>>>>> d07bf7e8fe1db1bd98a1700508f18dfd702dd7e5
