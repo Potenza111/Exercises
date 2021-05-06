@@ -16,6 +16,7 @@ export default function Search() {
     <div className={styles.search}>
       <form onSubmit={handleSubmit}>
         <input
+          placeholder="Search.."
           type="text"
           value={term}
           onChange={(e) => setTerm(e.target.value)}
