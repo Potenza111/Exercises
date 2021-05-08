@@ -8,12 +8,16 @@ import Layout from "@/components/Layout";
 import styles from "@/styles/AuthForm.module.css";
 
 export default function register() {
-  const [userName, setuserName] = useState("");
+  const [username, setuserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setpasswordConfirm] = useState("");
 
   const { register, error } = useContext(AuthContext);
+
+  useEffect(() => {
+    error & toast.error(error);
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,8 +26,7 @@ export default function register() {
       toast.error("Passwords don't match");
       return;
     }
-
-    register({ userName, email, password });
+    register({ username, email, password });
   };
 
   return (
@@ -39,7 +42,7 @@ export default function register() {
             <input
               type="text"
               id="username"
-              value={userName}
+              value={username}
               onChange={(e) => {
                 setuserName(e.target.value);
               }}
