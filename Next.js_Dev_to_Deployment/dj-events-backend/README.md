@@ -1,10 +1,10 @@
-# Strapi application
-
-A quick description of your strapi application
+# Strapi DJ Events Backend
 
 
 
-Deploying to Heroku (beause project sits in sub folder of main branch)
+
+
+Deploying to Heroku (because project sits in sub folder of main branch)
 
 cd to highest level of branch (in this case, excercises)
 
